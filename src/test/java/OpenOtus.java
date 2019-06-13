@@ -29,7 +29,7 @@ public class OpenOtus {
         driver.navigate().to(url);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         try {
-            Assert.assertTrue(driver.getTitle().equals("OTUS - Онлайн-образование"));
+            Assert.assertTrue(driver.getTitle().equals("OTUS - Онлайн-образование!!!"));
             rootLogger.info("Успех! Страница открылась верно! ");
         }catch (Throwable e) {
             rootLogger.error("Ошибка! не верный тайтл страницы");
